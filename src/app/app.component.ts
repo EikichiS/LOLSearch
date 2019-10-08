@@ -7,10 +7,6 @@ import { SummonerService } from './services/summoner.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'LOLSearch';
-  summoners: any = [];
-  leagues: any;
-  champions: any = [];
 
   constructor(protected summonerservice: SummonerService) {
   }
