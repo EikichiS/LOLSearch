@@ -3,46 +3,67 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm">
-
+    <div class="col-sm-4">
+        <div class="card hovercard">
+            <div class="cardheader">
+    
+            </div>
+            <div class="avatar">
+              <img src="https://avatar.leagueoflegends.com/LA2/{{ summoners.name }}.png">
+            </div>
+            <div class="info">
+    
+              <p class="desc">{{ leagues.summonerName }}</p>
+              <p class="desc">LAS</p>
+              <p class="desc">{{ leagues.tier }} {{ leagues.rank }}</p>
+              
+            </div>
+    
+            <div class="bottom">
+                <p> Campeones Favoritos </p>
+              <a>
+                <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Tristana.png" width="42" height="42">
+              </a>
+              <a>
+                  <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Sivir.png" width="42" height="42">
+              </a>
+              <a>
+                  <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Sivir.png" width="42" height="42">
+              </a>
+              <a>
+                  <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Sivir.png" width="42" height="42">
+              </a>
+                <a>
+                  <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Sivir.png" width="42" height="42">
+              </a>
+            </div>
+          </div>
     </div>
-    <div class="col-sm">
-      <div class="card hovercard">
-        <div class="cardheader">
+    <div class="col-sm-8">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Resultado</th>
+                <th scope="col">Linea</th>
+                <th scope="col">Campeón</th>
+                <th scope="col">Column heading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-active" *ngFor="let match of matchs">
+                <th>{{ match.timestamp | date: 'dd/MM/yyyy h:mm:ss a' }}</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+            </tbody>
+          </table> 
 
-        </div>
-        <div class="avatar">
-          <img src="https://avatar.leagueoflegends.com/LA2/{{ summoners.name }}.png">
-        </div>
-        <div class="info">
-          
-          <p class="desc">{{ leagues.summonerName }}</p>
-          <p class="desc">División {{ leagues.tier }} {{ leagues.rank }}</p>
-          <p class="desc">Mejores Champs</p>
-        </div>
-
-        <div class="bottom">
-          <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/+ahmshahnuralam">
-            <i class="fa fa-google-plus"></i>
-          </a>
-          <a class="btn btn-primary btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
-            <i class="fa fa-behance"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm">
-     
-     
     </div>
 
 
   </div>
+
+
 
 </div>
